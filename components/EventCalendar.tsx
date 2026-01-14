@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { eventsData } from '@/data';
-import Image from 'next/image';
-import { useState } from 'react';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import { eventsData } from "@/data";
+import Image from "next/image";
+import { useState } from "react";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 type ValuePiece = Date | null;
 
@@ -15,7 +15,7 @@ const EventCalendar = () => {
 
   return (
     <div className="bg-white p-4 rounded-md">
-      {' '}
+      {" "}
       <Calendar onChange={onChange} value={value} />
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
@@ -24,7 +24,7 @@ const EventCalendar = () => {
       <div className="flex flex-col gap-4">
         {eventsData.map((event) => (
           <div
-            className="p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-lamaSky even:border-t-lamaPurple"
+            className="p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-nazimSky even:border-t-nazimPurple"
             key={event.id}
           >
             <div className="flex items-center justify-between">
